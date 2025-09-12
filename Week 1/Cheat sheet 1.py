@@ -13,9 +13,9 @@ exambleint = 12
 examplefloat = 12.12
 exampleboolean = False
 
-# firstname = input("What is your firstname: ")
-# lastname = input("What is your lastname: ")
-# print("Hello " + firstname + lastname)
+firstname = input("What is your firstname: ")
+lastname = input("What is your lastname: ")
+print("Hello " + firstname + lastname)
 
 sentence = "Finding subtring"
 print(sentence)
