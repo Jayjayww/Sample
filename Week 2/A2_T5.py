@@ -9,9 +9,9 @@
 # 4. Finally print the user specified substring.
 
 print("Program starting.\n")
-word = input("Inser a closed compound word: ")
+word = input("Insert a closed compound word: ")
 print("The word you inserted is", f"'{word}'" ",and in reverse it is ", f"'{word[::-1]}'" ".")
-print("The inserter word leght is", len(word))
+print("The inserted word lenght is", len(word))
 print("Last character is", f"'{word[-1]}'" ".")
 
 print("\nTake a substring from the inserted word by inserting...")

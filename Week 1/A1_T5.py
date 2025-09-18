@@ -6,7 +6,7 @@ print("Calculate the area of a wall.")
 # 2. Prompt user
     # 1. “Enter the width in meters: ”
     # 2. Store the input value into Feed variable.
-feed = input("Enter the width in meters" )
+feed = input("Enter the width in meters:" )
 
 # 3. Convert the Feed variable into an integer and store it in Width variable
 width = float(feed)
