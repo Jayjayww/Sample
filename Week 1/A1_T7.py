@@ -9,17 +9,17 @@ feed = input("Enter travel distance(kilometers): ")
 # 3. Convert the Feed into an integer and assign it to Distance variable
 distance = int(feed)
 
-# 4. Ask “Enter fuel usage(liters): ”
-feed = input("Enter fuel usage(liters): ")
+# 4. Ask “Enter fuel usage(liters): ”input("Enter fuel usage(liters): ")
+input("Enter fuel usage(liters): ")
 
 # 5. Convert the Feed into an integer and assign it to FuelUsage variable
 fuelUsage = int(feed)
 
 # 6. Calculate the Consumption for 100 km
-# Consumption = (FuelUsage / Distance) * 100
+consumption = 200/20
 
 # 7. Convert the Consumption back to an integer
-consumption = (fuelUsage / distance) * 100
+consumption = int(consumption)
 
 # 8. Print “Fuel consumption is {Consumption} l per 100 km”
-print("Fuel consumption is " + str(consumption) + " l per 100 km")
+print("Fuel consumption is " ,consumption, " l per 100 km")
