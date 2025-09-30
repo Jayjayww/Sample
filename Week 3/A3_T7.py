@@ -42,7 +42,7 @@ if choice == "1":
         result = int1 + 11
         print(f"Result is {result}")
 
-if choice == "2":
+elif choice == "2":
     print("Using multiple independent if-statements structure.")
     if int1 >= 400:
         result = int1 + 44 + 22 + 11
@@ -54,7 +54,7 @@ if choice == "2":
         result = int1 + 11
         print(f"Result is {result}")
 
-if choice == "0":
+elif choice == "0":
     print("Exiting...")
 else:
     print("Unknown options")
