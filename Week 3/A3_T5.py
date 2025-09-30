@@ -16,26 +16,24 @@
 # Use 1 decimal precision to round the converted value.
 
 print("Program starting.")
-while True:
-    print("\nOptions:")
-    print("1 - Celsius to Fahrenheit")
-    print("2 - Fahrenheit to celsius")
-    print("0 - Exit")
-    choice = input("Your choice: ")
+print("\nOptions:")
+print("1 - Celsius to Fahrenheit")
+print("2 - Fahrenheit to celsius")
+print("0 - Exit")
+choice = int(input("Your choice: "))
                    
-    if choice == "1":
-        celcius = float(input("Insert the amount of Celcius: "))
-        fahrenheit = celcius * 1.8 + 32
-        print(f"{round(celcius, 1)} C equals to {round(fahrenheit, 1)} F")
+if choice == 1:
+    celcius = float(input("Insert the amount of Celcius: "))
+    fahrenheit = celcius * 1.8 + 32
+    print(f"{round(celcius, 1)} °C equals to {round(fahrenheit, 1)} °F")
 
-    elif choice == "2":
-        fahrenheit = float(input("Insert the amount of Fahrenheit: "))
-        celcius = (fahrenheit - 32) / 1.8
-        print(f"{round(fahrenheit, 1)} F equals to {round(celcius, 1)} C")
-    elif choice == "0":
-        print("exiting...")
-        break
-    else:
-        print("Unknown option.")
-    print("")
-    print("Program ending.")
+elif choice == 2:
+    fahrenheit = float(input("Insert the amount of Fahrenheit: "))
+    celcius = (fahrenheit - 32) / 1.8
+    print(f"{round(fahrenheit, 1)} °F equals to {round(celcius, 1)} °C")
+elif choice == 0:
+    print("Exiting...")
+else:
+    print("Unknown option.")
+print("")
+print("Program ending.")
