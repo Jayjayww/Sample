@@ -21,7 +21,9 @@
 
 print("Program starting.")
 print("Testing decision structures.")
+
 int1 = int(input("Insert an integer: "))
+
 print("\nOptions:")
 print("1 - In one multi-branched decision")
 print("2 - In multiple independent if-statements")
@@ -45,14 +47,12 @@ if choice == "1":
 elif choice == "2":
     print("Using multiple independent if-statements structure.")
     if int1 >= 400:
-        result = int1 + 44 + 22 + 11
-        print(f"Result is {result}")
-    elif int1 >= 200:
-        result = int1 + 22 + 11
-        print(f"Result is {result}")
-    elif int1 >= 100:
-        result = int1 + 11
-        print(f"Result is {result}")
+        int1 += 44
+    if int1 >= 200:
+        int1 += 22
+    if int1 >= 100:
+        int1 += 11
+    print(f"Result is {int1}")
 
 elif choice == "0":
     print("Exiting...")
@@ -60,3 +60,12 @@ else:
     print("Unknown options")
 
 print("Program ending.")
+
+# elif(choice == 2):
+#     if(value >= 400):
+#     value += 44
+#     if(value >= 200):
+#     value += 22
+#     if(value >= 100):
+#     value += 11
+#Vaihtoehtoinen elif lausekkeelle
