@@ -2,11 +2,19 @@
 
 print("Program starting.")
 Integer = int(input("Insert a positive integer: "))
-sequence = Integer
-while Integer != 1:
-    if Integer % 2 == 0:
-        Integer //= 2
-    else:
-        Integer = 3 * Integer + 1
-print(" -> ".join(map(str, sequence)))
-print(f"Sequence had {len(sequence) - 1} total steps.\n")
+
+if Integer > 0:
+    steps = 0
+    print(str(Integer), end="")
+
+    while Integer != 1:
+        if Integer % 2 == 0:
+            Integer = Integer // 2
+        else:
+            Integer = 3 * Integer + 1
+        print(" -> " + str(Integer), end="")
+        steps += 1
+
+    print("\nSequence had " + str(steps) + " total steps.\n")
+
+print("Program ending.")
